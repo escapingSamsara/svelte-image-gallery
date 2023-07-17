@@ -48,12 +48,8 @@
             </div>
             <div class="input-box">
                 <input type="text" class="input" placeholder="get inspiration..." bind:value={term}>
-                {#if !term}
-                    <button class="button" on:click={handleSearch} disabled><img class="search-icon" src={searchIcon} alt="+"></button>
-                {:else}
-                    <button class="button" on:click={handleSearch}><img src={searchIcon} alt="+" class="search-icon">
-                    </button>
-                {/if}
+                <button class="button" on:click={handleSearch}><img src={searchIcon} alt="+" class="search-icon">
+                </button>
             </div>
         </div>
     </div>
