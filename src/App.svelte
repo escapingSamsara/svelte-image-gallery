@@ -1,8 +1,9 @@
 <script lang="ts">
     import axios from 'axios'
-    import {onMount} from 'svelte'
+    import {onMount} from "svelte";
     import searchIcon from "./assets/search-icon.svg";
     import headerFont from "./assets/header-font-rock3d.svg";
+    import {fly} from "svelte/transition";
 
     onMount(() => {
         console.log('mounted')
@@ -28,7 +29,6 @@
         await fetchData()
         term = ''
     }
-
 </script>
 
 
